@@ -34,7 +34,8 @@ namespace TDSCustomValidators.TemplateValidators
                 {
                     if (item.Value.Item.TemplateId == "{455A3E98-A627-4B40-8035-E683A0331AC7}")
                     {
-                        if (!string.IsNullOrEmpty(item.Value.ParsedItem.Name) && !item.Value.ParsedItem.Name.Contains(" ") && item.Value.ParsedItem.Name.UpperCaseCharactersCount() > 1)
+                        if (!string.IsNullOrEmpty(item.Value.ParsedItem.Name) && !item.Value.ParsedItem.Name.Contains(" ") 
+                            && item.Value.ParsedItem.Name.UpperCaseCharactersCount() > 1 && item.Value.ParsedItem.Name.LowerCaseCharactersCount() > 1)
                         {
                             string itemTitle = item.Value.ParsedItem.Fields["Title"];
 
@@ -45,7 +46,7 @@ namespace TDSCustomValidators.TemplateValidators
                                 Problem report = new Problem(this, position)
                                 {
                                     Message =
-                                        string.Format("Complex Template Field Name Must Have Display Name {0}",
+                                        string.Format("Complex Template Field Name Must Have Title {0}",
                                             item.Value.ParsedItem.Path)
                                 };
 

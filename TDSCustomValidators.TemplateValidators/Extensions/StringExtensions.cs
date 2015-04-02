@@ -17,5 +17,20 @@ namespace TDSCustomValidators.TemplateValidators.Extensions
 
             return count;
         }
+
+        public static int LowerCaseCharactersCount(this string str)
+        {
+            int count = 0;
+
+            foreach (char character in str)
+            {
+                if (char.IsLower(character))
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
     }
 }
