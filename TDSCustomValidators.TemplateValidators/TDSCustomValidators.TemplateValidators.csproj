@@ -57,6 +57,9 @@
     <Compile Include="NoSpacesInTemplateName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SectionIcon.cs" />
+    <Compile Include="TemplateMustHaveStandardValues.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

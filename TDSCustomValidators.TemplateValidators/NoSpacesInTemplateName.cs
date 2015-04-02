@@ -5,8 +5,8 @@ using System.Linq;
 
 namespace TDSCustomValidators.TemplateValidators
 {
-   [Validator("TDSCT004", Status.Warn, Description = "Template Names must not have spaces in them",
-        Name = "No Spaces In Template Names")]
+   [Validator("TDSCT004", Status.Warn, Description = "Template Name must not have spaces in them",
+        Name = "No Spaces In Template Name")]
     public class NoSpacesInTemplateName : UserConfigurableValidator
     {
         public override ValidatorSettings GetDefaultSettings()

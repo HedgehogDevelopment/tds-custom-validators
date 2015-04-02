@@ -1,13 +1,15 @@
-﻿using HedgehogDevelopment.SitecoreProject.Tasks.ProjectAnalysis;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using HedgehogDevelopment.SitecoreProject.Tasks.ProjectAnalysis;
 
-namespace TDSCustomValidators.PageEditorValidators.Sublayouts
+namespace TDSCustomValidators.TemplateValidators
 {
-    [ValidatorAttribute("TDSCPE001", Status.Warn, Description = "Sublayouts Must Have Thumbnail Set",
-        Name = "Sublayout Thumbnail")]
-    public class SublayoutThumbnail : UserConfigurableValidator
+      [Validator("TDSCT005", Status.Warn, Description = "Template must have standard values",
+        Name = "Template Must Have Standard Values")]
+    public class TemplateMustHaveStandardValues : UserConfigurableValidator
     {
         public override ValidatorSettings GetDefaultSettings()
         {
@@ -15,7 +17,7 @@ namespace TDSCustomValidators.PageEditorValidators.Sublayouts
             {
                 Properties = new List<string>
                 {
-                    "/sitecore/layout",
+                    "/sitecore/templates",
                 }
             };
         }
@@ -29,15 +31,15 @@ namespace TDSCustomValidators.PageEditorValidators.Sublayouts
                 if (Settings.Properties.Any(
                     x => item.Value.Item.SitecoreItemPath.StartsWith(x, StringComparison.InvariantCultureIgnoreCase)))
                 {
-                    if (item.Value.Item.TemplateId == "{0A98E368-CDB9-4E1E-927C-8E0C24A003FB}")
+                    if (item.Value.Item.TemplateId == "{AB86861A-6030-46C5-B394-E8F99E8B87DB}")
                     {
-                        if (string.IsNullOrEmpty(item.Value.ParsedItem.Fields["Thumbnail"]))
+                        if (string.IsNullOrEmpty(item.Value.ParsedItem.Fields["__Standard values"]))
                         {
                             ProblemLocation position = GetItemPosition(scprojDocument, item.Value.Item);
 
                             Problem report = new Problem(this, position)
                             {
-                                Message = string.Format("Sublayout Doesn't Have Thumbnail Set {0}", item.Value.ParsedItem.Path)
+                                Message = string.Format("Template Doesn't Have Standard Values {0}", item.Value.ParsedItem.Path)
                             };
 
                             yield return report;
