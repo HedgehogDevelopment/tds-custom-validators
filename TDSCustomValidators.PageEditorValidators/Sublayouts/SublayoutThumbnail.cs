@@ -19,7 +19,7 @@ namespace TDSCustomValidators.PageEditorValidators.Sublayouts
                 }
             };
         }
-
+        
         public override IEnumerable<Problem> Validate(
             Dictionary<Guid, HedgehogDevelopment.SitecoreProject.Tasks.SitecoreDeployInfo> projectItems,
             System.Xml.Linq.XDocument scprojDocument)

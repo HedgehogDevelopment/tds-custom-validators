@@ -1,9 +1,7 @@
-﻿using System;
+﻿using HedgehogDevelopment.SitecoreProject.Tasks.ProjectAnalysis;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HedgehogDevelopment.SitecoreProject.Tasks.ProjectAnalysis;
 
 namespace TDSCustomValidators.TemplateValidators
 {

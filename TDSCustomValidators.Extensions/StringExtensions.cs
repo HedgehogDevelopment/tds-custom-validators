@@ -1,5 +1,5 @@
 ﻿
-namespace TDSCustomValidators.TemplateValidators.Extensions
+namespace TDSCustomValidators.Extensions
 {
     public static class StringExtensions
     {
