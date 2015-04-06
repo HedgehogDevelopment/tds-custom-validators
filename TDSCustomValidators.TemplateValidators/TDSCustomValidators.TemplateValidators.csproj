@@ -60,6 +60,12 @@
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TDSCustomValidators.Extensions\TDSCustomValidators.Extensions.csproj">
+      <Project>{a5f15635-4bb0-4d76-97d0-4912b0ed41f2}</Project>
+      <Name>TDSCustomValidators.Extensions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
