@@ -32,12 +32,15 @@
   <ItemGroup>
     <Reference Include="HedgehogDevelopment.SitecoreCommon.Data">
       <HintPath>..\Components\HedgehogDevelopment.SitecoreCommon.Data.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="HedgehogDevelopment.SitecoreCommon.Data.Parser">
       <HintPath>..\Components\HedgehogDevelopment.SitecoreCommon.Data.Parser.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="HedgehogDevelopment.SitecoreProject.Tasks">
       <HintPath>..\Components\HedgehogDevelopment.SitecoreProject.Tasks.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -48,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContentUnderHomeMustHavePresentationDetails.cs" />
     <Compile Include="ItemMustUseBucket.cs" />
     <Compile Include="NoSpacesInContentItemName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

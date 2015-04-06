@@ -27,9 +27,10 @@ namespace TDSCustomValidators.ContentValidators
             foreach (var item in projectItems)
             {
                 if (Settings.Properties.Any(
-                    x => item.Value.Item.SitecoreItemPath.StartsWith(x, StringComparison.InvariantCultureIgnoreCase))){
+                    x => item.Value.Item.SitecoreItemPath.StartsWith(x, StringComparison.InvariantCultureIgnoreCase)))
+                {
 
-                        if (item.Value.ParsedItem.Children.Count > 30 && item.Value.ParsedItem.Fields["__Is Bucket"] != "1")
+                    if (item.Value.ParsedItem.Children.Count > 30 && item.Value.ParsedItem.Fields["__Is Bucket"] != "1")
                     {
                         ProblemLocation position = GetItemPosition(scprojDocument, item.Value.Item);
 
