@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSCustomValidators.PageEdi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSCustomValidators.TemplateValidators", "TDSCustomValidators.TemplateValidators\TDSCustomValidators.TemplateValidators.csproj", "{3BA9D464-F59B-4CB5-800F-6A3E8E21B1F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSCustomValidators.ContentValidators", "TDSCustomValidators.ContentValidators\TDSCustomValidators.ContentValidators.csproj", "{76F03D22-6C10-437E-BFD3-0691A208CC40}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSCustomValidators.Extensions", "TDSCustomValidators.Extensions\TDSCustomValidators.Extensions.csproj", "{A5F15635-4BB0-4D76-97D0-4912B0ED41F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDSCustomValidators.ContentValidators", "TDSCustomValidators.ContentValidators\TDSCustomValidators.ContentValidators.csproj", "{76F03D22-6C10-437E-BFD3-0691A208CC40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{3BA9D464-F59B-4CB5-800F-6A3E8E21B1F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BA9D464-F59B-4CB5-800F-6A3E8E21B1F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BA9D464-F59B-4CB5-800F-6A3E8E21B1F9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A5F15635-4BB0-4D76-97D0-4912B0ED41F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5F15635-4BB0-4D76-97D0-4912B0ED41F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5F15635-4BB0-4D76-97D0-4912B0ED41F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5F15635-4BB0-4D76-97D0-4912B0ED41F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76F03D22-6C10-437E-BFD3-0691A208CC40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
