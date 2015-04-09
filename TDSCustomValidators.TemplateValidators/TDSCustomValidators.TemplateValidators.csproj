@@ -59,6 +59,7 @@
     <Compile Include="TemplateMustHaveStandardValues.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TemplateIcon.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDSCustomValidators.Extensions\TDSCustomValidators.Extensions.csproj">
